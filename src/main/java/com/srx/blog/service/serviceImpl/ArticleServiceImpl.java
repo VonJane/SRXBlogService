@@ -29,14 +29,14 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public int createArticle(Article article) {
-        article.setId(distributedIdGen.getId());
+        article.setId(distributedIdGen.getId().toString());
         article.setTimestamp(System.currentTimeMillis());
         article.setIsEffective(1);
         return articleMapper.insertSelective(article);
     }
 
     @Override
-    public Article getArticleById(Long id) {
+    public Article getArticleById(String id) {
         Article article = articleMapper.selectArticleById(id);
         return article;
     }

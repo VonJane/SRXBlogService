@@ -9,7 +9,7 @@ public interface ArticleService {
 
     int createArticle(Article article);
 
-    Article getArticleById(Long id);
+    Article getArticleById(String id);
 
     int updateArticle(Article article);
 }

@@ -1,7 +1,7 @@
 package com.srx.blog.domain;
 
 public class Article {
-    private Long id;
+    private String id;
 
     private String articleTitle;
 
@@ -35,11 +35,11 @@ public class Article {
 
     private String author;
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 

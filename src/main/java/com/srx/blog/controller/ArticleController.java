@@ -36,7 +36,7 @@ public class ArticleController {
     }
 
     @RequestMapping(value = "/getArticleById")
-    public Article getArticleById(Long id){
+    public Article getArticleById(String id){
         return articleService.getArticleById(id);
     }
 }
